@@ -45,5 +45,5 @@ with DAG(
         code_path="local:///opt/spark/examples/src/main/python/pi.py",
         template_spec=SPARK_PI,
         startup_timeout_seconds=900,
-        delete_on_termination=False,
+        delete_on_termination=True,
     )
